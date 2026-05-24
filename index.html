@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ULTRABOARD MOOVERA - Web App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            /* BACKGROUND LAYAR DIUBAH MENJADI HITAM PEKAT */
+            background-color: #111317;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 1;
+        }
+        /* LOADER DENGAN TEKS PUTIH AGAR KONTRAS DI BACKGROUND HITAM */
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* TEKS WARNA PUTIH */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">Memuat Aplikasi Mohon Tunggu...</div>
+    
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbx03JQnn2cUtsPdeqyjwd6BjLl0VogCDd19mr2W8oqM8RRSdVfUZe2P1_GBqfM1afd-IQ/exec" 
+        onload="document.getElementById('loader').style.display='none';">
+    </iframe>
+</body>
+</html>
