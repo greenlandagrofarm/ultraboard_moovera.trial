@@ -11,7 +11,6 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-            /* BACKGROUND LAYAR DIUBAH MENJADI HITAM PEKAT */
             background-color: #111317;
         }
         iframe {
@@ -23,13 +22,11 @@
             border: none;
             z-index: 1;
         }
-        /* LOADER DENGAN TEKS PUTIH AGAR KONTRAS DI BACKGROUND HITAM */
         #loader {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            /* TEKS WARNA PUTIH */
             color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -41,8 +38,9 @@
 <body>
     <div id="loader">Memuat Aplikasi Mohon Tunggu...Silahkan Refresh Jika Koneksi Terputus</div>
     
+    <!-- 🔥 GANTI LINK SRC DI BAWAH INI DENGAN URL WEB APP /exec KAMU YANG BARU 🔥 -->
     <iframe 
-        src="https://script.google.com/u/0/home/projects/1MAr9znhc-3gbyfNhMSDA0mqQ2dt2-RMj212nkaD-OAxwG1dmQgGPR68Y/edit" 
+        src="https://script.google.com/macros/s/AKfycbyORkslFn-fVKpGVj-1NRFGzAdF73OG4LMILD62qJGIrQJNavCgaYMzl4yzFVcUXQMGLg/exec" 
         onload="document.getElementById('loader').style.display='none';">
     </iframe>
 </body>
